@@ -1,23 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <site-title/>
+    <Article/>
+    <vertical-menu/>
+    <horizental-menu/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SiteTitle from './components/SiteTitle.vue'
+import Article from './components/Article.vue'
+import VerticalMenu from './components/VerticalMenu.vue'
+import HorizentalMenu from './components/HorizentalMenu.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    SiteTitle,
+    Article,
+    VerticalMenu,
+    HorizentalMenu
   }
 }
 </script>
 
 <style>
-#app {
+.app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
