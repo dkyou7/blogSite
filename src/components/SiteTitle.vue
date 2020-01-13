@@ -13,12 +13,14 @@ export default {
 
 <style scoped>
     .site h1 a{
-        color: #000000;
+        color: #83a4a8;
         text-decoration: none;
     }
     .site h1{
         margin: 0;
         font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
     }
     .site p{
         margin:0;

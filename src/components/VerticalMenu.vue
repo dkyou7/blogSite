@@ -4,17 +4,17 @@
         <nav class="sidemenu">
             <h1>특집 기사</h1>
             <ul>
-                <li><a href="#">알기 쉬운 지도 읽기 방법</a></li>
-                <li><a href="#">처음부터 시작하는 토마토 기르기</a></li>
-                <li><a href="#">svn 설정 방법</a></li>
-                <li><a href="#">로지택 연동하는 방법</a></li>
+                <li><a href="#"><i class="fa fa-caret-right"></i>알기 쉬운 지도 읽기 방법</a></li>
+                <li><a href="#"><i class="fa fa-caret-right"></i>처음부터 시작하는 토마토 기르기</a></li>
+                <li><a href="#"><i class="fa fa-caret-right"></i>svn 설정 방법</a></li>
+                <li><a href="#"><i class="fa fa-caret-right"></i>로지택 연동하는 방법</a></li>
             </ul>
         </nav>
         <nav class="recommend">
             <h1>추천 기사</h1>
             <ul>
-                <li><a href="#">처음부터 시작하는 꽃꽃이</a></li>
-                <li><a href="#">오래된 스마트폰을 충전했더니..</a></li>
+                <li><a href="#"><i class="fa fa-caret-right"></i>처음부터 시작하는 꽃꽃이</a></li>
+                <li><a href="#"><i class="fa fa-caret-right"></i>오래된 스마트폰을 충전했더니..</a></li>
             </ul>
         </nav>
     </div>
@@ -22,9 +22,15 @@
     <nav class="popular">
         <h1>인기 기사</h1>
         <ul>
-            <li><a href="#">꽃을 좋아하는 사람들을 위한 포인트</a></li>
-            <li><a href="#">웹앱 어플리케이션 개발의 기초</a></li>
-            <li><a href="#">세계 각지의 쇼핑백</a></li>
+            <li><a href="#">
+                <img src="../assets/img/03/flower-60x60.jpg" alt="">
+                <div class="text">
+                    꽃을 좋아하는 사람들을 위한 포인트
+                    <span>외출</span>
+                </div>
+                </a></li>
+            <li><a href="#"><i class="fa fa-caret-right"></i>웹앱 어플리케이션 개발의 기초</a></li>
+            <li><a href="#"><i class="fa fa-caret-right"></i>세계 각지의 쇼핑백</a></li>
         </ul>
     </nav>
   </div>
@@ -132,4 +138,26 @@ export default {
         }
     }
 
+    .sidemenu i{
+        margin-right: 5px;
+        color: #888888;
+    }
+    
+    .popular li a img{
+        border: none;
+    }
+    .popular a::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .popular img{
+        float: left;
+        width: 60px;
+    }
+    .popular .text{
+        float: none;
+        width: auto;
+        margin-left: 60px;
+    }
 </style>
