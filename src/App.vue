@@ -40,14 +40,11 @@ export default {
 }
 
 @media(min-width: 768px){
+
   .boxA::after{
     content: '';
     display: block;
     clear: both;
-  }
-  .article{
-    float: left;
-    width: 70%;
   }
   .vertical_menu{
     width: 30%;
@@ -55,6 +52,8 @@ export default {
     padding: 30px 0 40px 0;
   }
   .article{
+    float: left;
+    width: 70%;
     padding: 40px 0 30px 0;
     padding-right: 50px;
     box-sizing: border-box;
@@ -73,14 +72,7 @@ export default {
 .siteTitle{
   padding: 8px 0 8px 0;
 }
-@media(min-width: 599px){
-  .siteTitle{
-    padding: 4px 0 4px 0;
-  }
-  .article{
-    padding: 25px 0 30px 0;
-  }
-}
+
 @media(min-width:900px){
     #app{
       width: 900px;

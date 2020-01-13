@@ -22,15 +22,33 @@
     <nav class="popular">
         <h1>인기 기사</h1>
         <ul>
-            <li><a href="#">
-                <img src="../assets/img/03/flower-60x60.jpg" alt="">
-                <div class="text">
-                    꽃을 좋아하는 사람들을 위한 포인트
-                    <span>외출</span>
-                </div>
-                </a></li>
-            <li><a href="#"><i class="fa fa-caret-right"></i>웹앱 어플리케이션 개발의 기초</a></li>
-            <li><a href="#"><i class="fa fa-caret-right"></i>세계 각지의 쇼핑백</a></li>
+            <li>
+                <a href="#">
+                    <img src="../assets/img/03/flower-60x60.jpg" alt="">
+                    <div class="text">
+                        꽃을 좋아하는 사람들을 위한 포인트
+                        <span>외출</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../assets/img/03/bag-60x60.jpg" alt="">
+                    <div class="text">
+                        웹앱 어플리케이션 개발의 기초
+                        <span>컴퓨터</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../assets/img/03/sea-60x60.jpg" alt="">
+                    <div class="text">
+                        세계 각지의 바다
+                        <span>여행</span>
+                    </div>
+                </a>
+            </li>
         </ul>
     </nav>
   </div>
@@ -99,9 +117,10 @@ export default {
     .popular li a{
         display: block;
         padding: 5px;
-        color: #000000;
+        color: #2288bb;
         font-size: 15px;
         text-decoration: none;
+        border-bottom: dotted 2px #dddddd;
     }
     .popular li a:hover{
         background-color: #e3e3e3;
@@ -112,6 +131,11 @@ export default {
     }
     .popular{
         margin-bottom: 30px;
+    }
+    .popular span{
+        display: block;
+        color: #666666;
+        font-size: 12px;
     }
 
     @media(min-width:600px) and (max-width: 767px){
@@ -159,5 +183,6 @@ export default {
         float: none;
         width: auto;
         margin-left: 60px;
+        padding-left: 15px;
     }
 </style>
