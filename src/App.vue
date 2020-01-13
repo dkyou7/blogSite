@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <site-title/>
-    <horizental-menu/>
+    <site-title class="siteTitle"/>
+    <horizental-menu class="horizental_menu"/>
     <div class="boxA">
       <Article class="article"/>
       <vertical-menu class="vertical_menu"/>
     </div>
-    <Copyright/>
+    <Copyright class="copyright"/>
   </div>
 </template>
 
@@ -52,6 +52,25 @@ export default {
   .vertical_menu{
     width: 30%;
     float: left;
+    padding: 30px 0 40px 0;
   }
+  .article{
+    padding: 40px 0 30px 0;
+    padding-right: 50px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+}
+
+.horizental_menu{
+  background-color: #7cbac1;
+}
+.copyright{
+  border-top: solid 1px #dddddd;
+  padding: 15px 0 15px 0;
+}
+.siteTitle{
+  padding: 8px 0 8px 0;
 }
 </style>

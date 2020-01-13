@@ -25,13 +25,13 @@ export default {
     }
     .menu li a{
         display: block;
-        padding: 5px;
+        padding: 15px;
         color: #000000;
         font-size: 15px;
         text-decoration: none;
     }
     .menu li a:hover{
-        background-color: #e3e3e3;
+        background-color: #75dbe7;
     }
     .menu ul::after{
         content: '';
