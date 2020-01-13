@@ -73,4 +73,19 @@ export default {
 .siteTitle{
   padding: 8px 0 8px 0;
 }
+@media(min-width: 599px){
+  .siteTitle{
+    padding: 4px 0 4px 0;
+  }
+  .article{
+    padding: 25px 0 30px 0;
+  }
+}
+@media(min-width:900px){
+    #app{
+      width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
 </style>

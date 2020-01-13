@@ -42,4 +42,13 @@ export default {
         float: left;
         width: auto;
     }
+    @media(max-width: 599px){
+        .menu li a{
+            padding:10px 3px;
+            font-size: 11px;
+        }
+        .menu h1{
+            font-size: 20px;
+        }
+    }
 </style>

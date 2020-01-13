@@ -1,29 +1,33 @@
 <template>
-<div>
-  <nav class="sidemenu">
-      <h1>특집 기사</h1>
-      <ul>
-          <li><a href="#">알기 쉬운 지도 읽기 방법</a></li>
-          <li><a href="#">처음부터 시작하는 토마토 기르기</a></li>
-          <li><a href="#">svn 설정 방법</a></li>
-          <li><a href="#">로지택 연동하는 방법</a></li>
-      </ul>
-  </nav>
-  <nav class="recommend">
-      <h1>추천 기사</h1>
-      <ul>
-          <li><a href="#">처음부터 시작하는 꽃꽃이</a></li>
-          <li><a href="#">오래된 스마트폰을 충전했더니..</a></li>
-      </ul>
-  </nav>
-  <nav class="popular">
-      <h1>인기 기사</h1>
-      <ul>
-          <li><a href="#">꽃을 좋아하는 사람들을 위한 포인트</a></li>
-          <li><a href="#">웹앱 어플리케이션 개발의 기초</a></li>
-          <li><a href="#">세계 각지의 쇼핑백</a></li>
-      </ul>
-  </nav>
+<div class="box4">
+    <div class="box4-1">
+        <nav class="sidemenu">
+            <h1>특집 기사</h1>
+            <ul>
+                <li><a href="#">알기 쉬운 지도 읽기 방법</a></li>
+                <li><a href="#">처음부터 시작하는 토마토 기르기</a></li>
+                <li><a href="#">svn 설정 방법</a></li>
+                <li><a href="#">로지택 연동하는 방법</a></li>
+            </ul>
+        </nav>
+        <nav class="recommend">
+            <h1>추천 기사</h1>
+            <ul>
+                <li><a href="#">처음부터 시작하는 꽃꽃이</a></li>
+                <li><a href="#">오래된 스마트폰을 충전했더니..</a></li>
+            </ul>
+        </nav>
+    </div>
+  <div class="box4-2">
+    <nav class="popular">
+        <h1>인기 기사</h1>
+        <ul>
+            <li><a href="#">꽃을 좋아하는 사람들을 위한 포인트</a></li>
+            <li><a href="#">웹앱 어플리케이션 개발의 기초</a></li>
+            <li><a href="#">세계 각지의 쇼핑백</a></li>
+        </ul>
+    </nav>
+  </div>
 </div>
 
 </template>
@@ -103,4 +107,29 @@ export default {
     .popular{
         margin-bottom: 30px;
     }
+
+    @media(min-width:600px) and (max-width: 767px){
+        .box4::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .box4-1{
+            float: left;
+            width: 50%;
+            padding-right: 20px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        .box4-2{
+            float: left;
+            width: 50%;
+            padding-left: 20px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+    }
+
 </style>

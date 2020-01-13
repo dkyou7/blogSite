@@ -36,4 +36,9 @@ export default {
         width: 100%;
         height: auto;
     }
+    @media(max-width: 599px){
+        .story h1{
+            font-size: 26px;
+        }
+    }
 </style>

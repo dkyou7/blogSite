@@ -24,4 +24,9 @@ export default {
         margin:0;
         font-size: 12px;
     }
+    @media(max-width: 599px){
+        .site h1{
+            font-size: 20px;
+        }
+    }
 </style>
