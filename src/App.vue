@@ -38,17 +38,20 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-.boxA::after{
-  content: '';
-  display: block;
-  clear: both;
-}
-.article{
-  float: left;
-  width: 70%;
-}
-.vertical_menu{
-  width: 30%;
-  float: left;
+
+@media(min-width: 768px){
+  .boxA::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .article{
+    float: left;
+    width: 70%;
+  }
+  .vertical_menu{
+    width: 30%;
+    float: left;
+  }
 }
 </style>
