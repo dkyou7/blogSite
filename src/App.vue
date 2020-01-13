@@ -1,9 +1,12 @@
 <template>
   <div id="app">
     <site-title/>
-    <Article/>
-    <vertical-menu/>
     <horizental-menu/>
+    <div class="boxA">
+      <Article class="article"/>
+      <vertical-menu class="vertical_menu"/>
+    </div>
+    <Copyright/>
   </div>
 </template>
 
@@ -12,6 +15,7 @@ import SiteTitle from './components/SiteTitle.vue'
 import Article from './components/Article.vue'
 import VerticalMenu from './components/VerticalMenu.vue'
 import HorizentalMenu from './components/HorizentalMenu.vue'
+import Copyright from './components/Copyright.vue'
 
 export default {
   name: 'app',
@@ -19,7 +23,8 @@ export default {
     SiteTitle,
     Article,
     VerticalMenu,
-    HorizentalMenu
+    HorizentalMenu,
+    Copyright
   }
 }
 </script>
@@ -32,5 +37,18 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.boxA::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.article{
+  float: left;
+  width: 70%;
+}
+.vertical_menu{
+  width: 30%;
+  float: left;
 }
 </style>
