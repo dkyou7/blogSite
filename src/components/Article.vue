@@ -25,12 +25,32 @@
         이번에 온 농가의 토마토는 신선하고 저렴하군요.!
     </p>
 
+    <div class="share">
+        <ul>
+            <li><a href="#" class="share-tw">
+                <i class="fa fa-twitter"></i>
+                <span>Twitter</span>으로 공유
+            </a></li>
+            <li><a href="#" class="share-fb">
+                <i class="fa fa-facebook"></i>
+                <span>Facebook</span>으로 공유
+            </a></li>
+            <li><a href="#" class="share-gp">
+                <i class="fa fa-google-plus"></i>
+                <span>Google+</span>으로 공유
+            </a></li>
+        </ul>
+        <RA/>
+    </div>
   </article>
 </template>
 
 <script>
+import RA from './RelationArticle.vue'
 export default {
-
+    components:{
+        RA
+    }
 }
 </script>
 
@@ -100,5 +120,48 @@ export default {
         padding-left: 10px;
         border-left: solid 10px #7cbac1;
         font-weight: normal;
+    }
+
+
+    /* sns 공유 */
+    .share{
+        margin-top: 40px;
+    }
+    .share ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .share li a{
+        display: block;
+        padding: 10px 5px;
+        color: #ffffff;
+        font-size: 14px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .share li a:hover{
+        opacity: 0.8;
+    }
+    .share ul::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .share li{
+        float: left;
+        width: 33.333333%;
+    }
+    .share-tw{
+        background-color: #55acee;
+    }
+    .share-fb{
+        background-color: #3b5998;
+    }
+    .share-gp{
+        background-color: #dd4b39;
+    }
+    @media(max-width: 469px){
+        .share span{display: none;}
     }
 </style>

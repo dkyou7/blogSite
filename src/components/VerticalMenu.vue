@@ -13,8 +13,22 @@
         <nav class="recommend">
             <h1>추천 기사</h1>
             <ul>
-                <li><a href="#"><i class="fa fa-caret-right"></i>처음부터 시작하는 꽃꽃이</a></li>
-                <li><a href="#"><i class="fa fa-caret-right"></i>오래된 스마트폰을 충전했더니..</a></li>
+                <li>
+                    <a href="#">
+                        <img src="../assets/img/03/flower.jpg" alt="">
+                        <div class="text">
+                            처음부터 시작하는 꽃꽃이
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../assets/img/03/old.jpg" alt="">
+                        <div class="text">
+                            오래된 스마트폰을 충전했더니..
+                        </div>
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -86,6 +100,18 @@ export default {
         margin-bottom: 30px;
     }
 
+    .recommend img{
+        width: 100%;
+        height: auto;
+        border: none;
+        vertical-align: bottom;
+    }
+    .recommend .text{
+        background-color: rgba(0, 0, 0, .5);
+        color: #ffffff;
+        padding: 5px 10px;
+    }
+
     .recommend ul{
         margin: 0;
         padding: 0;
@@ -93,13 +119,14 @@ export default {
     }
     .recommend li a{
         display: block;
-        padding: 5px;
         color: #000000;
         font-size: 15px;
         text-decoration: none;
+        margin-bottom: 5px;
     }
     .recommend li a:hover{
         background-color: #e3e3e3;
+        opacity: 0.8;
     }
     .recommend h1{
         border-bottom: dotted 2px #666666;
@@ -107,6 +134,18 @@ export default {
     }
     .recommend  {
         margin-bottom: 30px;
+    }
+    .recommend a{
+        position: relative;
+    }
+    .recommend .text{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
     }
 
     .popular ul{
