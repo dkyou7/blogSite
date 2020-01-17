@@ -1,4 +1,4 @@
-# css-prac1
+# css-prac
 
 ## Project setup
 ```
